@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback Survey - HLWN'V</title>
+	  <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <main>
+    <h1 id="title">HLWN'V / Mateusz Chrzan</h1>
+      <h2>Coding and Music Production</h2>
+    <h1 id="title">Feedback Survey</h1>
+    <p id="description">
+      Thank you for taking the time to tell me how should I  improve my skills.
+      </p>
+      <form id="survey-form">
+        <fieldset>
+        <label id="name-label">Enter Your Name: <input  type="text" name="first-name" id="name" placeholder="Name" required /></label>
+        <label id="email-label">Enter Your Email: <input type="email" name="email" id="email" placeholder="example@example.com" required /></label>
+        <label id="number-label">Enter your age: <input type="number" name="age" id="number" min="13" max="120" placeholder="13+" required/> </label>
+      </fieldset>
+      <fieldset>
+       <label>How do you rate my productions?
+          <select name="rate" id="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">1/5 star</option>
+            <option value="2">2/5 stars</option>
+            <option value="3">3/5 stars</option>
+            <option value="4">4/5 stars</option>
+            <option value="4">5/5 stars</option>
+          </select>
+        </label>
+        
+        <label><input type="radio" name="sex" class="inline" value="men" checked /> Men</label>
+        <label><input type="radio" name="sex" class="inline" value="woman" /> Woman</label>
+        </fieldset>
+        <fieldset>
+          <label>
+            Check your favourite genres:
+          <input type="checkbox" name="genre" value="edm" checked/>EDM 
+          <input type="checkbox" name="genre" value="house"/> House
+          <input type="checkbox" name="genre" value="trance"/> Trance
+          <input type="checkbox" name="genre" value="pop"/> Pop
+			  </label>
+        </fieldset>
+        <fieldset>
+          <textarea name="text" placeholder="say smth"></textarea>
+          </fieldset>
+          <input type="submit" id="submit" value="Submit" />
+      </form>
+    </main>
+    </body>
+    </html>
