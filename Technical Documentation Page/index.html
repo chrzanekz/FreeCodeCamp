@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Technical Documentation Page</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>HTML Technical Documentation</header>
+        <ul>
+          <li><a class="nav-link" href="#Introduction_to_HTML">Introduction to HTML</a></li>
+          <li><a class="nav-link" href="#Introduction_to_HTML_overview">Introduction to HTML overview</a></li>
+          <li><a class="nav-link" href="#HTML_text_fundamentals">HTML text fundamentals</a></li>
+          <li><a class="nav-link" href="#Advanced_text_formatting">Advanced text formatting</a></li>
+          <li><a class="nav-link" href="#Document_and_website_structure">Document and website structure</a></li>
+        </ul>
+    </nav>
+      <main id="main-doc">
+          <section class="main-section" id="Introduction_to_HTML">
+            <header>Introduction to HTML</header>
+            <p>At its heart, HTML is a language made up of elements, which can be applied to pieces of text to give them different meaning in a document (Is it a paragraph? Is it a bulleted list? Is it part of a table?), structure a document into logical sections (Does it have a header? Three columns of content? A navigation menu?), and embed content such as images and videos into a page. This module will introduce the first two of these and introduce fundamental concepts and syntax you need to know to understand HTML.</p>
+            <p><h2>Prerequisites</h2>
+            Before starting this module, you don't need any previous HTML knowledge, but you should have at least basic familiarity with using computers and using the web passively (i.e., just looking at it and consuming content). You should have a basic work environment set up (as detailed in Installing basic software), and understand how to create and manage files (as detailed in Dealing with files). Both are parts of our Getting started with the web complete beginner's module.</p>
+            <p>The anatomy of our element is:
+<ul>
+<li>The opening tag: This consists of the name of the element (in this example, p for paragraph), wrapped in opening and closing angle brackets. This opening tag marks where the element begins or starts to take effect. In this example, it precedes the start of the paragraph text.
+The content: This is the content of the element. In this example, it is the paragraph text.</li>
+<li>The closing tag: This is the same as the opening tag, except that it includes a forward slash before the element name. This marks where the element ends. Failing to include a closing tag is a common beginner error that can produce peculiar results.</li>
+</ul></p>
+          </section>
+          <section class="main-section" id="Introduction_to_HTML_overview">
+            <header>Introduction to HTML overview</header>
+            <p>In this article we cover the absolute basics of HTML. To get you started, this article defines elements, attributes, and all the other important terms you may have heard. It also explains where these fit into HTML. You will learn how HTML elements are structured, how a typical HTML page is structured, and other important basic language features. Along the way, there will be an opportunity to play with HTML too!</p>
+We've already seen the <code>title></code> element in action — this can be used to add a title to the document. This however can get confused with the <code>h1></code> element, which is used to add a top level heading to your body content — this is also sometimes referred to as the page title. But they are different things!
+<ul>
+
+<li>The <code>h1></code> element appears on the page when loaded in the browser — generally this should be used once per page, to mark up the title of your page content (the story title, or news headline, or whatever is appropriate to your usage.)</li>
+<li>The <code>title></code> element is metadata that represents the title of the overall HTML document (not the document's content.)</li>
+</ul>
+            </h2>What is HTML?</h2>
+            <p>HTML (Hypertext Markup Language) is a markup language that tells web browsers how to structure the web pages you visit. It can be as complicated or as simple as the web developer wants it to be. HTML consists of a series of elements, which you use to enclose, wrap, or mark up different parts of content to make it appear or act in a certain way. The enclosing tags can make content into a hyperlink to connect to another page, italicize words, and so on. For example, consider the following line of text:</p>
+        <code>My cat is very grumpy</code>
+            </section>
+          <section class="main-section" id="HTML_text_fundamentals"> 
+            <header>HTML text fundamentals</header>
+            <p>One of HTML's main jobs is to give text structure so that a browser can display an HTML document the way its developer intends. This article explains the way HTML can be used to structure a page of text by adding headings and paragraphs, emphasizing words, creating lists, and more.</p>
+            <table>
+  <tbody>
+    <tr>
+      <th scope="row">Prerequisites:</th>
+      <td>
+        Basic HTML familiarity, as covered in Getting started with HTML.
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">Objective:</th>
+      <td>
+        Learn how to mark up a basic page of text to give it structure and
+        meaning — including paragraphs, headings, lists, emphasis, and quotations.
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p>For example, in this story, the <code>h1></code> element represents the title of the story, the <code>h2></code> elements represent the title of each chapter, and the <code>h3></code> elements represent sub-sections of each chapter:
+<code>
+h1>The Crushing Bore/h1>
+
+p>By Chris Mills/p>
+
+h2>Chapter 1: The dark night/h2>
+
+p>It was a dark night. Somewhere, an owl hooted. The rain lashed down on the .../p>
+
+h2>Chapter 2: The eternal silence/h2>
+
+p>Our protagonist could not so much as a whisper out of the shadowy figure .../p>
+
+h3>The specter speaks/h3>
+
+p>Several more hours had passed, when all of a sudden the specter sat bolt upright and exclaimed, "Please have mercy on my soul!"/p></code> </p>
+            </section>
+          <section class="main-section" id="Advanced_text_formatting">
+            <header>Advanced text formatting</header>
+            <p>There are many other elements in HTML for formatting text, which we didn't get to in the HTML text fundamentals article. The elements described in this article are less known, but still useful to know about (and this is still not a complete list by any means). Here you'll learn about marking up quotations, description lists, computer code and other related text, subscript and superscript, contact information, and more.</p>
+            <p>
+              <h2>Quotations</h2>
+              HTML also has features available for marking up quotations; which element you use depends on whether you are marking up a block or inline quotation.
+
+Blockquotes
+If a section of block level content (be it a paragraph, multiple paragraphs, a list, etc.) is quoted from somewhere else, you should wrap it inside a <code>blockquote></code> element to signify this, and include a URL pointing to the source of the quote inside a cite attribute. For example, the following markup is taken from the MDN <code>blockquote></code> element page:</p>
+          </section>
+          <section class="main-section" id="Document_and_website_structure">
+          <header>Document and website structure</header>
+          <p>n addition to defining individual parts of your page (such as "a paragraph" or "an image"), HTML also boasts a number of block level elements used to define areas of your website (such as "the header", "the navigation menu", "the main content column"). This article looks into how to plan a basic website structure, and write the HTML to represent this structure.<p>
+            <p>Basic sections of a document
+Webpages can and will look pretty different from one another, but they all tend to share similar standard components, unless the page is displaying a fullscreen video or game, is part of some kind of art project, or is just badly structured:
+
+header:
+Usually a big strip across the top with a big heading, logo, and perhaps a tagline. This usually stays the same from one webpage to another.
+
+navigation bar:
+Links to the site's main sections; usually represented by menu buttons, links, or tabs. Like the header, this content usually remains consistent from one webpage to another — having inconsistent navigation on your website will just lead to confused, frustrated users. Many web designers consider the navigation bar to be part of the header rather than an individual component, but that's not a requirement; in fact, some also argue that having the two separate is better for accessibility, as screen readers can read the two features better if they are separate.</p>
+<h2>Block/structural semantics</h2>
+<ul>
+  <li>Use appropriate document structure including doctype, and <code>html>, head> and body></code> elements.</li>
+<li>In general, the letter should be marked up as an organization of headings and paragraphs, with the following exception. There is one top level heading (the "Re:" line) and three second level headings.</li>
+<li>Use an appropriate list type to mark up the semester start dates, study subjects, and exotic dances.</li>
+<li>Put the two addresses inside <code>address></code> elements. Each line of the address should sit on a new line, but not be in a new paragraph.</li>
+</ul>
+          </section>
+        </main>
+  </body>
+</html>
