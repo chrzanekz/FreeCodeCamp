@@ -1,0 +1,253 @@
+/*Basics*/
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Baskervville', serif;
+  color: linen;
+  background-color: rgb(20, 30, 40);
+  font-size: 1.5rem;
+}
+/*video*/
+iframe {
+  max-width: 560px;
+  width: 100%;
+}
+
+/* input form*/
+
+fieldset {
+  padding: 2rem 0;
+  border: none;
+}
+
+form {
+  width: 60vw;
+	max-width: 600px;
+	min-width: 300px;
+	margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+label {
+  display: block;
+	margin: 0.5rem 0;
+}
+
+fieldset:not(:last-of-type) {
+  border-bottom: 3px solid #3b3b4f;
+}
+
+input{
+  display: inlineblock;
+  width: 100%;
+
+}
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+textarea{
+  width: 100%;
+  height: 100px;
+}
+
+
+a {
+  text-decoration: none;
+  color: linen;
+}
+
+/*page wrapper, main div */
+#page-wrapper {
+  position: relative;
+  
+}
+
+/* id href, top */
+#games {
+    padding-top: 180px;
+    margin-top: -180px;
+}
+
+#features{
+  padding-top: 180px;
+  margin-top: -180px;
+}
+#homebrew{
+padding-top: 180px;
+    margin-top: -180px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  min-height: 150px;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  z-index:2;
+}
+
+#header-img {
+  padding: 0 auto;
+  height: 100%;
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+
+/*photo of umd disc*/
+.umd{
+  align-items: center;
+  width: 50%;
+  
+}
+
+/* styling of navigation */
+nav a{
+  color: #000;
+}
+
+li {
+  list-style: none;
+}
+
+nav > ul {
+  min-width: 300px;
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* main div*/
+main{
+  position: relative;
+  z-index: 1;
+  top: 180px;
+  margin: 0 auto;
+  padding: 20px;
+  justify-content: space-around;
+  flex: auto;
+}
+
+/*styling page*/
+
+h2{
+  position: relative;
+  left: 20px;
+  text-align: left;
+  color: blue;
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+p {
+  margin-top: 20px;
+  margin-bottom: 0
+  
+}
+p + p {
+  text-indent: 1.5em;
+  margin-top: 0
+}
+
+/* smaller screens under 650px*/
+
+@media (max-width: 650px) {
+
+  #header-img {
+    padding-top: 5px;
+    width: 100%;
+    position: relative;
+  }
+  nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+  }
+  nav li {
+    padding-bottom: 15px;
+  }
+  nav > ul {
+    flex-direction: column;
+  }
+  header {
+    flex-wrap: wrap;
+  }
+  main{
+  position: relative;
+  top: 240px;
+  margin: 0 auto;
+}
+
+#games {
+    padding-top: 240px;
+    margin-top: -240px;
+}
+
+#features{
+  padding-top: 240px;
+    margin-top: -240px;
+}
+#homebrew{
+padding-top: 240px;
+    margin-top: -240px;
+}
+
+}
+
+footer {
+  margin-top: 230px;
+  background-color: #fff;
+  padding: 20px;
+  
+}
+
+footer > ul {
+  display: flex;
+  justify-content: flex-end;
+  color: #000;
+}
+
+footer > ul > li {
+  padding: 0 10px;
+  color: #000;
+}
+
+footer a{
+  color: #ccc;
+}
+footer > span {
+  
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9em;
+  color: #000;
+}
+
+
+
